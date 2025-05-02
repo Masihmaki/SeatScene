@@ -1,15 +1,15 @@
-﻿@model Actor
+﻿@model Producer
 
 @{
-    ViewData["Title"] = "Add a New Actor";
+    ViewData["Title"] = "Update Producer";
 }
 
 <div class="row justify-content-center">
     <div class="col-md-8">
-        <h1 class="text-center mb-4">Add a New Actor</h1>
+        <h1 class="text-center mb-4">Update Producer</h1>
 
         <div class="card shadow p-4">
-            <form asp-action="Create">
+            <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
 
                 <div class="form-group text-center">
@@ -36,7 +36,7 @@
 
                 <div class="form-group text-center mt-4">
                     <button type="submit" class="btn btn-success px-4">
-                        <i class="bi bi-plus-circle"></i> Create
+                        <i class="bi bi-plus-circle"></i> Update
                     </button>
                     <a class="btn btn-secondary px-4 ms-2" asp-action="Index">
                         <i class="bi bi-card-list"></i> Show All
